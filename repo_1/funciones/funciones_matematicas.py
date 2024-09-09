@@ -1,4 +1,4 @@
-
+import math
 
 def suma() -> int:
     
@@ -85,4 +85,21 @@ def es_primo() -> int:
     
     return f"{n} es un numero primo"
 
+def raiz_cuadrada() -> float:
+    
+    num = float(input("De que numero queres saber su raiz cuadrada? "))
+    
+    raiz_2 = round (math.sqrt(num))
+    
+    return raiz_2
+
+def raiz_n() -> float:
+    
+    num = float(input("Cual es el radicando? "))
+    
+    indice = float(input("Cual es el indice de la raiz? "))
+    
+    raiz = round (num ** (1 / indice))
+    
+    return raiz
 
